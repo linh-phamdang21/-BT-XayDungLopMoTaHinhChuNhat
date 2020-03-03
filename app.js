@@ -23,6 +23,7 @@ let Rectangle = function (width, height) {
     this.showRectangle = function () {
         let c = document.getElementById("mycanvas");
         let ctx = c.getContext("2d");
+        ctx.fillStyle = "green";
         ctx.fillRect(20,20,this.width,this.height);
     }
 }
